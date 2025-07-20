@@ -10,4 +10,6 @@ public class SpringMvcWebThymleafAppApplication {
 		SpringApplication.run(SpringMvcWebThymleafAppApplication.class, args);
 	}
 
+	
+
 }

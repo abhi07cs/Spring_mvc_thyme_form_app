@@ -18,14 +18,22 @@
 			<tr>
 				<td>PRODUCT ID</td>
 				<td><input type="text" th:field="*{pid}"/></td>
+				
+				<td th:if="${#fields.hasErrors('pid')}" th:errors="*{pid}">ID is required</td>
+
+				
+				
 			</tr>
 			<tr>
 				<td>PRODUCT NAME</td>
 				<td><input type="text" th:field="*{pname}"/></td>
+				<td th:if="${#fields.hasErrors('pname')}" th:errors="*{pname}">ID is required</td>
+				
 			</tr>
 			<tr>
 				<td>PRODUCT PRICE</td>
 				<td><input type="text" th:field="*{price}"/></td>
+				<td th:if="${#fields.hasErrors('price')}" th:errors="*{price}">ID is required</td>
 			</tr>
 			<tr>
 				<td></td>
